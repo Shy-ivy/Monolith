@@ -112,3 +112,18 @@
       key_slots:
       - EncryptionKeyCommon
       - EncryptionKeyUssp
+
+- type: entity
+  parent: ClothingHeadset
+  id: ATUheadset
+  name: ATU headset
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+      - EncryptionKeyMedical
+  - type: Sprite
+    sprite: _mono/Clothing/Ears/Headsets/ATUheadset.rsi
+  - type: Clothing
+    sprite: _mono/Clothing/Ears/Headsets/ATUheadset.rsi

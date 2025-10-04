@@ -577,3 +577,20 @@
   - type: SuitSensor
     randomMode: false
     mode: SensorVitals
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitATUversion
+  name: ATU jumpsuit
+  description: Designed for it to be worn under an ATU hardsuit, this jumpsuit is made from durable, breathable fabric... or so it says on the tag.
+  components:
+  - type: StaticPrice
+    price: 1500
+    vendPrice: 2500
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/trauma.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/trauma.rsi
+  - type: SuitSensor
+    randomMode: <true/false>
+    mode: <SensorMode>
