@@ -1,6 +1,6 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase]
-  id: ATUparamedHardsuit
+  id: ClothingOuterHardsuitATUparamed
   name: ATU paramed hardsuit
   description: An armored hardsuit, designed for advanced trauma units operating in high-risk environments. It offers superior protection against ballistic, explosive, and environmental hazards, while maintaining mobility and comfort for extended missions. You better pray you have insurance choom
   components:
@@ -36,7 +36,7 @@
     blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
-      head: ClothingHeadHelmetHardsuitATUparamedhelmet
+      head: ClothingHeadHelmetHardsuitATUhelmet
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
