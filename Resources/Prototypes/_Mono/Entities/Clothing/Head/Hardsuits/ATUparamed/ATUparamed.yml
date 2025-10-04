@@ -1,0 +1,33 @@
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: [ClothingHeadHardsuitBase, ShowMedicalIcons]
+  id: ClothingHeadHelmetHardsuitATUhelmet
+  name: ATU paramed hardsuit helmet
+  description: The standard helmet of the Armed Trauma Unit paramedic hardsuit, outfitted with night vision and a medical hud.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Head/Hardsuits/ATUhelmet.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Head/Hardsuits/ATUhelmet.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: NightVision
+    isEquipment: true
+    color: "#03A5FC"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide

@@ -1,0 +1,44 @@
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ATUparamedHardsuit
+  name: ATU paramed hardsuit
+  description: An armored hardsuit, designed for advanced trauma units operating in high-risk environments. It offers superior protection against ballistic, explosive, and environmental hazards, while maintaining mobility and comfort for extended missions. You better pray you have insurance choom
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/ATUparamed.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Mono/Clothing/OuterClothing/Hardsuits/ATUparamed.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.03
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.4
+        Piercing: 0.475
+        Shock: 0.25
+        Heat: 0.3
+        Radiation: 0.55
+        Caustic: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.45
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.825
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
+    requiredSlot: outerclothing
+    blockUnequipWhenAttached: false
+    replaceCurrentClothing: true
+    clothingPrototypes:
+      head: ClothingHeadHelmetHardsuitATUparamedhelmet
+      helmetcover: ClothingHeadHelmetCoverBlock
+      helmetattachment: ClothingHeadHelmetAttachmentBlock
+  - type: StaticPrice
+    price: 7500
+    vendPrice: 1000
